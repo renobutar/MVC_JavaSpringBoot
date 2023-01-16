@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+// import com.example.demo.dto.Register;
 import com.example.demo.models.Employee;
 import com.example.demo.repositories.EmployeeRepository;
 
@@ -39,5 +40,22 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public Integer findIdByEmail(String Email) {
 		return employeeRepository.findIdByEmail(Email);
 	}
+
+	@Override
+	public String findEmailAndPassword(String Email, String password) {
+		return employeeRepository.findEmailAndPassword(Email, password);
+	}
+
+	// @Override
+	// public Boolean register(Register register, Employee employee) {
+	// 	employeeRepository.save(employee)
+	// 	return employeeRepository.findById(employee.getId()).isPresent();
+	// }
+
+	// @Override
+	// public Boolean register(Register register) {
+	// 	employeeRepository.sa
+	// 	return null;
+	// }
 
 }

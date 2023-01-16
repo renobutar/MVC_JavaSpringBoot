@@ -4,23 +4,23 @@ import java.sql.Date;
 
 public class Register {
     private Integer id;
-    private String fullname;
+    private String name;
     private String email;
     private Date birthdate;
     private String password;
     private Integer role_id;
-    
+
     public Integer getId() {
         return id;
     }
     public void setId(Integer id) {
         this.id = id;
     }
-    public String getFullname() {
-        return fullname;
+    public String getName() {
+        return name;
     }
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setName(String name) {
+        this.name = name;
     }
     public String getEmail() {
         return email;
@@ -45,6 +45,5 @@ public class Register {
     }
     public void setRole_id(Integer role_id) {
         this.role_id = role_id;
-    }
-
+    }   
 }

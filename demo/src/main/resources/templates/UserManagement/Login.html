@@ -5,10 +5,10 @@
     <body>
         <div class="container">
             <form
-                th:action="@{/userManagement/save}"
+                th:action="@{/userManagement/login_cek}"
                 method="post"
             >
-                <div class="form-group">
+                <div class="form-group col-md-4">
                     <label for="Email" class = "col-form-label">Email</label>
                     <input type="text" class="form-control" id="email" th:field="*{employee.email}">
                 </div>
@@ -16,7 +16,8 @@
                     <label for="Password" class="col-form-label">Password</label>
                     <input type="text" class="form-control" id="password" th:field="*{user.password}">
                 </div>
-                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="submit" class="btn btn-primary" style="margin-left: 17px;">Login</button>
+                <button type="submit" class="btn btn-primary" style="margin-left: 17px;">Forgot Password</button>
             </form>
         </div>
     </body>
